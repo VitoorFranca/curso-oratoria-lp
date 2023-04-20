@@ -1,6 +1,9 @@
+import Card from "@/components/Card";
+import Button from "@/components/Button";
+
 export default function Home() {
   return (
-    <main className="">
+    <main className="flex flex-col justify-center items-center gap-12">
       <section className="h-[58rem]">
 
         <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">
@@ -10,18 +13,11 @@ export default function Home() {
 
         <div className="w-full h-5/6 flex-col flex pt-12 items-center gap-12">
           <div className="bg-slate-600 md:h-4/6 md:w-8/12 w-4/5 h-72"/>
-
-          <button className="bg-green-400 shadow shadow-green-300 p-4 rounded-md text-zinc-50 font-bold hover:opacity-50 transition-opacity">Quero falar em público com segurança</button>
+          <Button>Quero falar em público com segurança</Button>
 
         </div>
 
       </section>
-
-
-
-
-
-
 
       <section className="flex flex-col items-center">
         <div className="max-w-5xl flex flex-col gap-6 text-xl px-12">
@@ -31,6 +27,23 @@ export default function Home() {
           <h3>Nossa metodologia de oratória foi criada por quem já passou pela timidez e conhece as consequências de não conseguir se expressar com qualidade.</h3>
         </div>
       </section>
+
+
+      <section className="flex flex-col justify-center items-center px-12 py-12 gap-16 max-w-screen-xl">
+        <div className="flex flex-wrap gap-12 justify-center">
+          <Card className="sm:flex hidden">Perdeu oportunidades.</Card>
+          <Card>Foi prejudicado profissionalmente por não conseguir dizer “não” para tarefas que não eram da sua função.</Card>
+          <Card>Se sente incapaz para tudo que faz na vida.</Card>
+          <Card className="sm:flex hidden">Tem a sua vida profissional estagnada</Card>
+          <Card>Vive com raiva de si mesmo por não conseguir se expressar.</Card>
+          <Card>Não vive plenamente, pois sempre tem o receio de ser julgado e criticado pelos amigos, familiares e colegas de trabalho…</Card>
+        </div>
+        
+        <div className="flex justify-center">
+          <Button>Quero falar em público com segurança</Button>
+        </div>
+
+      </section>
     </main>
   )
-}
+};

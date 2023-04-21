@@ -1,10 +1,23 @@
+'use client'
+
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import Faq from "@/components/Faq";
 
 export default function Home() {
+  function toggleVisibility(id: string) {
+    const element = document.getElementById(id);
+    element?.classList.toggle('invisible');
+    element?.classList.toggle('opacity-100');
+    element?.classList.toggle('h-auto');
+  }
+  function toggleH3(id: string) {
+    const element = document.getElementById(id);
+    element?.classList.toggle('text-green-400');;
+  }
   return (
-    <main className="flex flex-col justify-center items-center gap-12">
-      <section className="h-[58rem]">
+    <main className="flex flex-col justify-center items-center gap-12 scroll-smooth">
+      <section id="1" className="h-[58rem]">
 
         <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">
           <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com o nosso curso de oratória</h1>
@@ -19,7 +32,7 @@ export default function Home() {
 
       </section>
 
-      <section className="flex flex-col items-center">
+      <section id="2" className="bg-zinc-900 w-full flex flex-col items-center py-24">
         <div className="max-w-5xl flex flex-col gap-6 text-xl px-12">
           <h2>Você já perdeu alguma oportunidade importante na vida por não conseguir se expressar com segurança?</h2>
           <h3>Nossa metodologia de oratória foi criada especialmente para pessoas desejam falar em público com confiança e impacto.</h3>
@@ -29,7 +42,7 @@ export default function Home() {
       </section>
 
 
-      <section className="flex flex-col justify-center items-center px-12 py-12 gap-16 max-w-screen-xl">
+      <section id="3" className="flex flex-col justify-center items-center px-12 py-12 gap-16 max-w-screen-xl">
         <div className="flex flex-wrap gap-12 justify-center">
           <Card className="sm:flex hidden">Perdeu oportunidades.</Card>
           <Card>Foi prejudicado profissionalmente por não conseguir dizer “não” para tarefas que não eram da sua função.</Card>
@@ -42,6 +55,13 @@ export default function Home() {
         <div className="flex justify-center">
           <Button>Quero falar em público com segurança</Button>
         </div>
+
+      </section>
+
+      <section id="4" className="bg-zinc-900 w-full flex flex-col justify-center items-center px-12 py-12 gap-16">
+        <h2 className="text-5xl font-bold">Perguntas frequentes</h2>
+
+        <Faq />
 
       </section>
     </main>

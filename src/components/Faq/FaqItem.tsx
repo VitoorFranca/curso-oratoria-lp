@@ -1,11 +1,12 @@
+'use client'
 interface Props {
     question: string;
     response: string;
-    // questionId: string;
-    // responseId: string;
+    questionId: string;
+    responseId: string;
 }
 
-const FaqItem = ({ question, response, }: Props) => {
+const FaqItem = ({ question, response, questionId, responseId }: Props) => {
 
     function toggleResponse(id: string) {
         const element = document.getElementById(id);
@@ -30,9 +31,7 @@ const FaqItem = ({ question, response, }: Props) => {
         toggleBox(boxId)
     }
 
-    const boxId = 'li-' + (Math.floor(Math.random() * Date.now())).toString();
-    const questionId = 'a-' + (Math.floor(Math.random() * Date.now())).toString();
-    const responseId = 'p-' + (Math.floor(Math.random() * Date.now())).toString();
+    const boxId = 'boxId'
 
     return (
         <li onClick={() => handleClick({boxId, questionId, responseId})} id={boxId} className="border-b-stone-700 h-auto w-full cursor-pointer border-separate border-b-2 transition-[height]" >

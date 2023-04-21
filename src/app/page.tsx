@@ -1,5 +1,3 @@
-'use client'
-
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
@@ -17,7 +15,7 @@ export default function Home() {
   }
   return (
     <main className="flex flex-col justify-center items-center gap-12 scroll-smooth">
-      <section id="1" className="h-[58rem]">
+      <section id="1" className="h-[50rem]">
 
         <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">
           <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com o nosso curso de oratória</h1>

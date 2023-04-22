@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       <section id="mentor" className=" w-full flex md:flex-row flex-col-reverse items-center justify-center gap-16 py-24">
-        <div className="max-w-[38rem] w flex flex-col gap-12 p-16">
+        <div className="max-w-[38rem] w flex flex-col justify-center gap-12 p-4">
           <h2 className="font-bold text-3xl">QUEM SERÁ O SEU MENTOR?</h2>
           <div className="flex flex-col gap-8 text-xl">
             <p>
@@ -51,7 +51,7 @@ export default function Home() {
             Faculdade de Música e Artes Cênicas da UFBA, onde se graduou em Direção Teatral e
             Interpretação em 1979.
             <strong>
-            É Diretor Presidente do Centro de Oratória do Brasil (CEOBRA) e  Instrutor em várias instituições públicas e privadas, dentre elas:  AASP Associação dos Advogados de São Paulo – União dos Vereadores do Brasil; União dos Vereadores da Bahia; Banco Itaú. É apresentar do programa Cidadania, Direitos e Deveres na Rede Baiana de Rádio.
+            Instrutor em várias instituições públicas e privadas, dentre elas:  AASP Associação dos Advogados de São Paulo – União dos Vereadores do Brasil; União dos Vereadores da Bahia; Banco Itaú. É apresentar do programa Cidadania, Direitos e Deveres na Rede Baiana de Rádio.
             </strong>
             </p>
             <p>
@@ -64,9 +64,9 @@ export default function Home() {
           <Button>Quero falar em público com segurança</Button>
         </div>
 
-        <div className="relative w-[28rem] h-[30rem]">
+        <div className="relative md:w-[24rem] md:h-[26rem] w-[21rem] h-[24rem]">
           <Image src='/mentor.png' alt="Professor Pedro Barroso" className="object-cover object-right w-full h-full absolute opacity-100" width={550} height={7000}/>
-          <div className="bg-gradient-to-b from-transparent via-transparent to-black w-full h-[31rem] absolute z-10  " />
+          <div className="bg-gradient-to-b from-transparent via-transparent to-black w-full md:h-[26rem] h-[24rem] absolute z-10  " />
         </div>
         
       </section>

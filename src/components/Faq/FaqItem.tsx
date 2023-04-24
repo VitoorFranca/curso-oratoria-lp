@@ -1,7 +1,7 @@
 'use client'
 interface Props {
-    question: string;
-    response: string;
+    question: any;
+    response: any;
     questionId: string;
     responseId: string;
 }

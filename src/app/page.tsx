@@ -2,6 +2,8 @@ import Card from "@/components/Card";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import Image from "next/image";
+import { Frown, CheckCircle } from 'lucide-react';
+import ParaQuem from "@/utils/para-quem"
 
 export default function Home() {
   function toggleVisibility(id: string) {
@@ -19,7 +21,7 @@ export default function Home() {
       <section id="1" className="h-[50rem]">
 
         <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">
-          <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com o nosso curso de oratória</h1>
+          <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com o curso <strong>Oratória Eficaz</strong></h1>
           <h2 className="text-lg">Supere o medo e a timidez na comunicação e torne-se um comunicador mais forte e envolvente. Descubra como!</h2>
         </div>
 
@@ -41,7 +43,7 @@ export default function Home() {
       </section>
 
       <section id="mentor" className=" w-full flex md:flex-row flex-col-reverse items-center justify-center gap-16 py-24">
-        <div className="max-w-[38rem] w flex flex-col justify-center gap-12 p-4">
+        <div className="max-w-[35rem] w flex flex-col justify-center gap-12 p-4">
           <h2 className="font-bold text-3xl">QUEM SERÁ O SEU MENTOR?</h2>
           <div className="flex flex-col gap-8 text-xl">
             <p>
@@ -55,7 +57,7 @@ export default function Home() {
             </strong>
             </p>
             <p>
-            Sua atuação no campo da comunicação, oratória e desenvolvimento pessoal é marcada pela transdisciplinariedade. Pedro Barroso, reúne todo o conhecimento que já acessou ao longo da sua trajetória pessoal, profissional e espiritual para contribuir com o desenvolvimento da expressividade de cada um que se conecta ao seu trabalho. O ponto de partida é o autoconhecimento.
+            Pedro Barroso é um especialista em comunicação, oratória e desenvolvimento pessoal, com ampla experiência em diversas áreas. Seu trabalho se baseia no autoconhecimento e na transmissão de conhecimentos para aprimorar a expressividade de seus clientes.
             </p>
             <p>
             O seu principal objetivo é fazer com que todos os seus alunos, mentorados e leitores possam construir uma comunicação confiante e carismática para que, dessa forma, dêem voz aos seus propósitos e, possam levar as suas mensagens para o mundo!
@@ -72,7 +74,7 @@ export default function Home() {
       </section>
 
 
-      <section id="3" className="flex flex-col justify-center items-center px-12 py-12 gap-16 max-w-screen-xl">
+      <section id="3" className=" flex flex-col justify-center items-center px-12 py-12 gap-16 max-w-screen-xl">
         <div className="flex flex-wrap gap-12 justify-center">
           <Card className="sm:flex hidden">Perde oportunidades.</Card>
           <Card>Foi prejudicado profissionalmente por não conseguir dizer “não” para tarefas que não eram da sua função.</Card>
@@ -88,6 +90,37 @@ export default function Home() {
 
       </section>
 
+      <section id="3" className="bg-zinc-900 flex flex-col justify-center items-center px-12 py-12 gap-16 w-full mb-16">
+      <h1 className="text-4xl">
+        O CURSO <strong>ORADOR EFICAZ</strong> é para pessoas que:
+      </h1>
+
+        <ul className="flex flex-col gap-8 justify-center max-w-[43rem]">
+          {ParaQuem?.map((text, i) => {
+            return (
+              <li className="grid grid-flow-col grid-rows-1 gap-5 w-auto" key={i}> <CheckCircle className="text-green-400 w-14 h-14 col-span-1 col-start-1" /> <span className="col-span-1 col-start-2 text-left">{text}</span></li>
+            )
+          })}
+          
+        </ul>
+      </section>
+
+      <section id="3" className=" flex flex-col justify-center items-center max-w-screen-xl gap-16">
+        <h1 className="text-4xl font-bold text-center">VALOR DO INVESTIMENTO</h1>
+        <div className="bg-zinc-900 flex items-center flex-col gap-14 p-10 rounded-md">
+          <div className="bg-zinc-800 w-96 rounded-md flex flex-col items-center justify-center gap-5 p-8 ">
+            <span className="text-2xl">EM ATÉ 12X</span>
+            <span className="text-3xl">R$<strong className="text-5xl text-green-400">14,76</strong></span>
+            <span className="text-2xl">ou R$ <strong>147,00</strong> À VISTA</span>
+
+          </div>
+          <Button className="w-80">Garantir Vaga</Button>
+          <Image src='/formas-de-pagamento1.png.webp' alt="Formas de Pagamento" className="w-full h-full" width={550} height={7000}/>
+        </div>
+
+
+      </section>
+
       <section id="4" className="bg-zinc-900 w-full flex flex-col justify-center items-center px-12 py-12 gap-16">
         <h2 className="text-5xl font-bold">Perguntas frequentes</h2>
 
@@ -97,27 +130,3 @@ export default function Home() {
     </main>
   )
 };
-
-// O Professor Pedro Barroso é escritor, dramaturgo; poeta, ator e Diretor Teatral. Trabalha com Oratória desde 1972. E para servir à nobre arte de falar em público, ingressou no centro de excelência e referencia na arte teatral no Brasil, a Faculdade de Música e Artes Cênicas da UFBA, onde se graduou em Direção Teatral e Interpretação em 1979.
-
- 
-
-// Doutor Honoris-Causa em reconhecimento internacional aos serviços prestados à arte e a cultura, outorgado pela Universidade Corporativa das Américas, pela Faculdade Einstein e Doctor Honoris Causa em Comunicação pela Erich Fromm World University Inc., do Estado da Florida/EUA
-
- 
-
-// Escreveu vários livros, dentre eles “Como Perder o Medo de Falar em Público” (Editora Minas) a “A Arte de Convencer Falando” (Editora Scortecci) e Você Sabe Falar em Público? (Editora Scortecci)  Seduzir com Palavras(Editora Scortecci)  e  A Flauta Que Fala  (Editora Scortecci). Amor e Tormenta no Mar da Bahia   (Editora Scortecci)  Os 4 Hábitos do Orador Eficaz (Editora Scortecci).  Conversas com o Lobisomem - Strip-tease na Biblioteca - A Batina Do Diabo
-
-// Dentre outras obras suas destacam-se:  O Caçador de Místico; O Excomungado; Destino Amargo de um Poeta; Angélica; Vida Carniça; Gaizelina; Enquanto o Rei Dorme as Crianças Brincam; A Viúva Romântica; A Caminho do Céu, além dos vários títulos de edições esgotadas.
-
- 
-
-// Foi  o idealizador e fundador da Academia de Letras do Recôncavo,  ALER,  da qual faz parte.
-
- 
-
-// É Diretor Presidente do Centro de Oratória do Brasil (CEOBRA) e  Instrutor em várias instituições públicas e privadas, dentre elas:  AASP Associação dos Advogados de São Paulo – União dos Vereadores do Brasil; União dos Vereadores da Bahia; Escola Judicial TRT5 BA -  Escola da AGU Ba -  CERS Cursos Online; Brasil Jurídico; Sebrae; Centrhu – Central de Cursos e Pós-Graduações;   Sindicato dos Trabalhadores em Rádio TV e Publicidade do Estado da Bahia; Fórum Municipal para o Desenvolvimento Sustentável do Centro da Cidade de Salvador; Banco Itaú. É apresentar do programa Cidadania, Direitos e Deveres na Rede Baiana de Rádio.
-
- 
-
-// PEDRO BARROSO

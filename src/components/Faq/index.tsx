@@ -7,9 +7,15 @@ const Faq = () => {
         <ul className="flex gap-6 flex-col max-w-screen-xl">
             <FaqItem
                 question="QUAL A CARGA HORÁRIA DO CURSO?"
-                response="A carga horária é de 16 horas."
+                response={<>A carga horária é de <strong>18 horas</strong>.</>}
                 questionId="q-1"
                 responseId="resp-1"
+            />
+            <FaqItem
+                question={"O certificado gratuito do curso é reconhecido pelo MEC? E como posso obtê-lo?".toLocaleUpperCase()}
+                response="O certificado gratuito do curso não é reconhecido pelo MEC e pode ser baixado em formato digital após a conclusão do curso, seguindo as instruções na plataforma do curso."
+                questionId="q-two-certificate-mec"
+                responseId="resp-two-certificate-mec"
             />
             <FaqItem
                 question="O QUE EU TENHO DIREITO AO FAZER A INSCRIÇÃO?"

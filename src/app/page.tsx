@@ -2,20 +2,10 @@ import Card from "@/components/Card";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import Image from "next/image";
-import { Frown, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import ParaQuem from "@/utils/para-quem"
 
 export default function Home() {
-  function toggleVisibility(id: string) {
-    const element = document.getElementById(id);
-    element?.classList.toggle('invisible');
-    element?.classList.toggle('opacity-100');
-    element?.classList.toggle('h-auto');
-  }
-  function toggleH3(id: string) {
-    const element = document.getElementById(id);
-    element?.classList.toggle('text-green-400');;
-  }
   return (
     <main className="flex flex-col justify-center items-center gap-12 scroll-smooth">
       <section id="1" className="h-[50rem]">
@@ -36,7 +26,7 @@ export default function Home() {
       <section id="2" className="bg-zinc-900 w-full flex flex-col items-center py-24">
         <div className="max-w-5xl flex flex-col gap-6 text-xl px-12">
           <h2>Você já perdeu alguma oportunidade importante na vida por não conseguir se expressar com segurança?</h2>
-          <h3>Nossa metodologia de oratória foi criada especialmente para pessoas desejam falar em público com confiança e impacto.</h3>
+          <h3>Nossa metodologia de oratória foi criada especialmente para pessoas que desejam falar em público com confiança e impacto.</h3>
           <h2>Mas antes de entender melhor esse método que já transformou a vida de milhares de pessoas por todo o Brasil.</h2>
           <h3>Nossa metodologia de oratória foi criada por quem já passou pela timidez e conhece as consequências de não conseguir se expressar com qualidade.</h3>
         </div>
@@ -92,7 +82,7 @@ export default function Home() {
 
       <section id="3" className="bg-zinc-900 flex flex-col justify-center items-center px-12 py-12 gap-16 w-full mb-16">
       <h1 className="text-4xl">
-        O CURSO <strong>ORADOR EFICAZ</strong> é para pessoas que:
+        O CURSO <strong>ORATÓRIA EFICAZ</strong> é para pessoas que:
       </h1>
 
         <ul className="flex flex-col gap-8 justify-center max-w-[43rem]">

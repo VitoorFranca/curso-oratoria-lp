@@ -44,14 +44,14 @@ const Faq = () => {
             <FaqItem
                 question="Como funciona a garantia?"
                 response={
-                <div className="flex flex-col gap-3">
-                    <p>
+                <span className="flex flex-col gap-3">
+                    <span>
                         Dentro dos 7 dias, realizaremos o primeiro encontro, caso você não goste do conteúdo, você poderá solicitar o reembolso.
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                     Por lei, você tem até 7 dias corridos após a data da compra para solicitar a devolução do valor pago em caso de desistência.
-                    </p>
-                </div>}
+                    </span>
+                </span>}
                 questionId="q-garantia"
                 responseId="resp-garantia"
             />

@@ -5,9 +5,16 @@ import Image from "next/image";
 import { CheckCircle } from 'lucide-react';
 import ParaQuem from "@/utils/para-quem"
 
+export const metadata = {
+  title: 'Curso de oratória',
+  description: 'Curso de oratória para pessoas que tem dificuldade para falar em publico',
+}
+
 export default function Home() {
+
   return (
     <main className="flex flex-col justify-center items-center gap-12 scroll-smooth">
+      
       <section id="1" className="h-[50rem]">
 
         <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">

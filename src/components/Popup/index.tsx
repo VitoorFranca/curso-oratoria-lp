@@ -38,7 +38,7 @@ const Popup = ({ show, handleClosePopup }: Props) => {
 
 
                 <div className="flex flex-row gap-8 xs:flex-wrap flex-wrap-reverse p-5">
-                    <Button error={true} handleClick={handleClosePopup} className="w-[216px] min-h-[78px]">Permanecer com medo de falar em Público</Button>
+                    <Button error={true} handleClick={handleClosePopup} className="w-[216px] min-h-[78px] bg-red-400">Permanecer com medo de falar em Público</Button>
                     <Button className="w-[216px] h-[78px]">Inscrever-se e receber Ebooks de bônus</Button>
                 </div>
             </div>

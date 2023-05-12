@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useExitIntent } from 'use-exit-intent'
 import Popup from '@/components/Popup'
 
 import './globals.css'
-
+import router from 'next/router';
 
 export default function RootLayout({
   children,
@@ -42,27 +42,26 @@ export default function RootLayout({
       setShowPopup(true);
     }
   })
+  
+    useEffect(() => {
+      import('react-facebook-pixel')
+        .then((x) => x.default)
+        .then((ReactPixel) => {
+          ReactPixel.init('944392455614277')
+          ReactPixel.pageView()
+  
+          router.events.on('routeChangeComplete', () => {
+            ReactPixel.pageView()
+          })
+        })
+    }, [router.events])
 
   return (
     <html lang="pt-br">
-      <head>
-        {`<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '944392455614277');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=944392455614277&ev=PageView&noscript=1"
-/></noscript>`}
-      </head>
+
+
       <body suppressHydrationWarning={true}  className={`bg-black text-zinc-50 ${showPopup && 'overflow-hidden'}`}>
+        {/* <Pixel name="FACEBOOK_PIXEL_1" /> */}
         {children}
         <Popup
           show={showPopup}

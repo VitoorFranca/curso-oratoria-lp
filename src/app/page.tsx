@@ -2,12 +2,14 @@ import Card from "@/components/Card";
 import Button from "@/components/Button";
 import Faq from "@/components/Faq";
 import Image from "next/image";
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ChevronsRight, CheckCheck } from 'lucide-react';
 import ParaQuem from "@/utils/para-quem"
+import ComoFunciona from "@/utils/como-funciona"
+import TeraAcesso from "@/utils/tera-acesso"
 
 export const metadata = {
-  title: 'Curso de oratória',
-  description: 'Curso de oratória para pessoas que tem dificuldade para falar em publico',
+  title: 'Mentoria Oratória Eficaz - Pedro Barroso',
+  description: 'Mentoria Oratória Eficaz é para pessoas que tem dificuldade para falar em publico',
 }
 
 export default function Home() {
@@ -30,7 +32,7 @@ export default function Home() {
 
       </section>
 
-      <section id="2" className="bg-zinc-900 w-full flex flex-col items-center py-24">
+      <section className="bg-zinc-900 w-full flex flex-col items-center py-24 bg-image-2">
         <div className="max-w-5xl flex flex-col gap-6 text-xl px-8 line-clamp-6">
 
           <span>
@@ -77,7 +79,7 @@ export default function Home() {
 
       <section id="3" className=" flex flex-col justify-center items-center px-12 py-12 gap-16 max-w-screen-xl">
         <h1 className="text-4xl">
-        ESSE CURSO É PARA VOCÊ QUE:
+        ESSA MENTORIA É PARA VOCÊ QUE:
         </h1>
         <div className="flex flex-wrap gap-12 justify-center">
           <Card className="sm:flex hidden">Perde oportunidades.</Card>
@@ -94,15 +96,84 @@ export default function Home() {
 
       </section>
 
+      <section id="37" className="bg-zinc-900 flex flex-col items-center px-12 py-12 gap-16 w-full">
+        <h1 className="text-4xl">
+          COMO FUNCIONA A <strong>MENTORIA</strong>?
+        </h1>
+
+        <ul className="flex flex-col justify-center gap-8 max-w-[34rem]">
+          {
+            ComoFunciona?.map((text, i) => {
+              return (
+                <li key={i} className="flex justify-center items-center gap-6">
+                  <div>
+                    <ChevronsRight className="text-green-400 w-[70px] h-[70px]" />
+                  </div>
+                  <p className="text-xl font-bold flex flex-col">
+                    {text}
+                    <span className="w-3/6 h-1 bg-green-400 mt-1"></span>
+                  </p>
+                </li>
+              );
+            })
+          }
+
+        </ul>
+        
+        {/* <div className="flex justify-center">
+          <Button>Quero falar em público com segurança</Button>
+        </div> */}
+
+      </section>
+      <section className="flex flex-col items-center px-12 py-12 gap-16 w-full bg-image-1">
+        <h1 className="text-4xl">
+          O QUE VOCÊ TERA ACESSO
+        </h1>
+
+        <ul className="flex flex-col justify-center gap-8 max-w-[24rem]">
+          {
+            TeraAcesso?.map((text, i) => {
+
+              if(i === TeraAcesso.length - 1) return;
+
+              return (
+                <li key={i} className="flex items-center gap-6 border-2 px-4 py-4 border-green-400 border-solid rounded-full">
+                  <div>
+                    <CheckCircle className="text-green-400 w-[50px] h-[50px]" />
+                  </div>
+                  <p className="text-xl font-bold flex flex-col">
+                    {text}
+                  </p>
+                </li>
+              );
+            })
+          }
+
+                <li className="flex items-center gap-6 border-2 px-4 py-4 border-green-400 border-solid rounded-3xl">
+                  <div>
+                    <CheckCircle className="text-green-400 w-[50px] h-[50px]" />
+                  </div>
+                  <p className="text-xl font-bold flex flex-col">
+                    {TeraAcesso[TeraAcesso.length - 1]}
+                  </p>
+                </li>
+        </ul>
+        
+        <div className="flex justify-center">
+          <Button>Quero falar em público com segurança</Button>
+        </div>
+
+      </section>
+
       <section id="3" className="bg-zinc-900 flex flex-col justify-center items-center px-12 py-12 gap-16 w-full mb-16">
       <h1 className="text-4xl">
-        O CURSO <strong>ORATÓRIA EFICAZ</strong> é para pessoas que:
+        A MENTORIA <strong>ORATÓRIA EFICAZ</strong> é para pessoas que:
       </h1>
 
         <ul className="flex flex-col gap-8 justify-center max-w-[43rem]">
           {ParaQuem?.map((text, i) => {
             return (
-              <li className="grid grid-flow-col grid-rows-1 gap-5 w-auto" key={i}> <CheckCircle className="text-green-400 w-14 h-14 col-span-1 col-start-1" /> <span className="col-span-1 col-start-2 text-left">{text}</span></li>
+              <li className="grid grid-flow-col grid-rows-1 gap-5 w-auto" key={i}> <CheckCheck className="text-green-400 w-14 h-14 col-span-1 col-start-1" /> <span className="col-span-1 col-start-2 text-left">{text}</span></li>
             )
           })}
           

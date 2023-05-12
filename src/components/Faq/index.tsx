@@ -12,8 +12,8 @@ const Faq = () => {
                 responseId="resp-1"
             />
             <FaqItem
-                question={"O certificado gratuito do curso é reconhecido pelo MEC? E como posso obtê-lo?".toLocaleUpperCase()}
-                response="O certificado gratuito do curso não é reconhecido pelo MEC e pode ser baixado em formato digital após a conclusão do curso, seguindo as instruções na plataforma do curso."
+                question={"O curso disponibiliza certificado?".toLocaleUpperCase()}
+                response="Sim. Após a conclusão da mentoria, ficará disponível seu certificado no formato PDF."
                 questionId="q-two-certificate-mec"
                 responseId="resp-two-certificate-mec"
             />

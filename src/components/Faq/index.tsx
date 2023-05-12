@@ -31,27 +31,19 @@ const Faq = () => {
             /> */}
             <FaqItem
                 question="QUAIS OS MEIOS DE PAGAMENTO?"
-                response="Você pode fazer a sua inscrição pelo cartão de crédito em até 10x sem juros ou à vista (Pix ou Boleto)."
+                response="Você pode fazer a sua inscrição pelo cartão de crédito em até 12x sem juros ou à vista (Pix ou Boleto)."
                 questionId="q-4"
                 responseId="resp-4"
             />
             <FaqItem
-                question="O PAGAMENTO VIA CARTÃO É SEGURO?"
-                response="Sim, só utilizamos as plataformas mais conhecidas e seguras do mercado, como o Pagseguro e Stone."
+                question="COMO VAI SER OS ENCONTROS ONLINE?"
+                response="Vamos ter Três encontros online nos dias 20 e 27 de Maio, e 3 de junho. Serão 3 sábados consecutivos de Curso."
                 questionId="q-5"
                 responseId="resp-5"
             />
             <FaqItem
                 question="Como funciona a garantia?"
-                response={
-                <span className="flex flex-col gap-3">
-                    <span>
-                        Dentro dos 7 dias, realizaremos o primeiro encontro, caso você não goste do conteúdo, você poderá solicitar o reembolso.
-                    </span>
-                    <span>
-                    Por lei, você tem até 7 dias corridos após a data da compra para solicitar a devolução do valor pago em caso de desistência.
-                    </span>
-                </span>}
+                response="As 10 aula gravadas ficaram disponíveis assim que a compra do curso ser efetuada, os demais bônus liberamos após 7 dias da compra. Você terá 7 dias desde o momento da compra para solicitar reembolso caso não goste do conteúdo."
                 questionId="q-garantia"
                 responseId="resp-garantia"
             />

@@ -17,18 +17,6 @@ const Faq = () => {
                 questionId="q-two-certificate-mec"
                 responseId="resp-two-certificate-mec"
             />
-            {/* <FaqItem
-                question="O QUE EU TENHO DIREITO AO FAZER A INSCRIÇÃO?"
-                response="Estará incluso na sua inscrição o certificado que será entregue em mãos ao final do curso e coffee break em todos os dias de aula."
-                questionId="q-2"
-                responseId="resp-2"
-            /> */}
-            {/* <FaqItem
-                question="As aulas são gravadas?"
-                response="Basta só nos sinalizar que iremos te transferir de turma, sem problema."
-                questionId="q-3"
-                responseId="resp-3"
-            /> */}
             <FaqItem
                 question="QUAIS OS MEIOS DE PAGAMENTO?"
                 response="Você pode fazer a sua inscrição pelo cartão de crédito em até 12x sem juros ou à vista (Pix ou Boleto)."

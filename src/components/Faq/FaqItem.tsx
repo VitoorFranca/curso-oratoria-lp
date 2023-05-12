@@ -35,7 +35,7 @@ const FaqItem = ({ question, response, questionId, responseId }: Props) => {
 
     return (
         <li onClick={() => handleClick({boxId, questionId, responseId})} id={boxId} className="border-b-stone-700 h-auto w-full cursor-pointer border-separate border-b-2 transition-[height]" >
-            <a id={questionId} className="font-bold text-xl" >{question}</a>
+            <p id={questionId} className="font-bold text-xl" >{question}</p>
             <p id={responseId} className="h-0 text-lg invisible opacity-0 duration-300 py-4 px-8">{response}</p>
         </li>
     )

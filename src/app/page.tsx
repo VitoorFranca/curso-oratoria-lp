@@ -32,17 +32,14 @@ export default function Home() {
 
       <section id="2" className="bg-zinc-900 w-full flex flex-col items-center py-24">
         <div className="max-w-5xl flex flex-col gap-6 text-xl px-8 line-clamp-6">
-        
-        <span>
-          Você já perdeu oportunidades importantes na vida por não conseguir se expressar com segurança? Sabemos que a comunicação é uma habilidade crucial em todas as áreas da vida, e a falta dela pode ter um impacto significativo em nossa trajetória. Seja para apresentar um projeto no trabalho, falar em uma reunião de negócios ou até mesmo em uma entrevista de emprego, é importante saber se comunicar com clareza e confiança.
-        </span>
-        <span>
-          Foi pensando nisso que criamos uma metodologia de <strong>oratória eficiente</strong> e prática, que já transformou a vida de milhares de pessoas em todo o Brasil. Com técnicas comprovadas e adaptadas para a realidade de cada participante, nossos treinamentos de oratória oferecem um caminho seguro e efetivo para aprimorar a habilidade de <strong>falar em público</strong>, <strong>controlar a ansiedade</strong> e transmitir suas ideias com impacto. Não deixe que a falta de habilidade em se comunicar te impeça de alcançar seus objetivos. Invista em sua <strong>habilidade de comunicação</strong> e transforme sua vida com a nossa metodologia de oratória.
-        </span>
-          {/* <h2>Você já perdeu alguma oportunidade importante na vida por não conseguir se expressar com segurança?</h2>
-          <h3>Nossa metodologia de oratória foi criada especialmente para pessoas que desejam falar em público com confiança e impacto.</h3>
-          <h2>Mas antes de entender melhor esse método que já transformou a vida de milhares de pessoas por todo o Brasil.</h2>
-          <h3>Nossa metodologia de oratória foi criada por quem já passou pela timidez e conhece as consequências de não conseguir se expressar com qualidade.</h3> */}
+
+          <span>
+            Você já perdeu oportunidades importantes na vida por não conseguir se expressar com segurança? Sabemos que a comunicação é uma habilidade crucial em todas as áreas da vida, e a falta dela pode ter um impacto significativo em nossa trajetória. Seja para apresentar um projeto no trabalho, falar em uma reunião de negócios ou até mesmo em uma entrevista de emprego, é importante saber se comunicar com clareza e confiança.
+          </span>
+          <span>
+            Foi pensando nisso que criamos uma metodologia de <strong>oratória eficiente</strong> e prática, que já transformou a vida de milhares de pessoas em todo o Brasil. Com técnicas comprovadas e adaptadas para a realidade de cada participante, nossos treinamentos de oratória oferecem um caminho seguro e efetivo para aprimorar a habilidade de <strong>falar em público</strong>, <strong>controlar a ansiedade</strong> e transmitir suas ideias com impacto. Não deixe que a falta de habilidade em se comunicar te impeça de alcançar seus objetivos. Invista em sua <strong>habilidade de comunicação</strong> e transforme sua vida com a nossa metodologia de oratória.
+          </span>
+
         </div>
       </section>
 

@@ -11,9 +11,9 @@ const Card = ({ children, className, ...other } :Props) => {
         <div {...other} className={`bg-zinc-900 flex flex-col items-center text-center w-72 min p-12 font-bold rounded-md gap-5 ${className}`}>
             <Frown size={48} />
             
-            <h3>
+            <h2>
                 {children}
-            </h3>
+            </h2>
         </div>
     );
 }

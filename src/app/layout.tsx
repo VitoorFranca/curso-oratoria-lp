@@ -1,7 +1,3 @@
-// export const metadata = {
-//   title: 'Curso de oratória',
-//   description: 'Curso de oratória para pessoas que tem dificuldade para falar em publico',
-// }
 'use client';
 
 import { useState } from 'react'
@@ -19,7 +15,7 @@ export default function RootLayout({
 
   const [showPopup, setShowPopup] = useState(false);
 
-  const { unsubscribe, registerHandler } = useExitIntent({
+  const { registerHandler } = useExitIntent({
     "cookie": {
       "daysToExpire": 30,
       "key": "use-exit-intent"
@@ -38,29 +34,18 @@ export default function RootLayout({
 
   const handleClosePopup = () => {
     setShowPopup(false);
-    // unsubscribe();
-    
   }
 
   registerHandler({
     id: 'openModal',
     handler: () => {
-      console.log('First handler')
       setShowPopup(true);
     }
   })
 
-  registerHandler({
-    id: 'anotherHandler',
-    handler: () => {
-      console.log('Another handler')
-    },
-    context: ['onUnsubscribe', 'onMobile', "onDesktop"]
-  })
-
   return (
     <html lang="pt-br">
-      <body className={`bg-black text-zinc-50 ${showPopup && 'overflow-hidden'}`}>
+      <body suppressHydrationWarning={true}  className={`bg-black text-zinc-50 ${showPopup && 'overflow-hidden'}`}>
         {children}
         <Popup
           show={showPopup}

@@ -33,7 +33,7 @@ export default function Home() {
         </section>
 
         <section className="bg-zinc-900 w-full flex flex-col items-center py-24 bg-image-2">
-          <div className="max-w-5xl flex flex-col gap-6 text-xl px-8 line-clamp-6">
+          <div className="flex flex-col gap-6 text-xl px-8 line-clamp-6 max-w-[53rem]">
 
             <span>
               Você já perdeu oportunidades importantes na vida por não conseguir se expressar com segurança? Sabemos que a comunicação é uma habilidade crucial em todas as áreas da vida, e a falta dela pode ter um impacto significativo em nossa trajetória. Seja para apresentar um projeto no trabalho, falar em uma reunião de negócios ou até mesmo em uma entrevista de emprego, é importante saber se comunicar com clareza e confiança.
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="mentor" className=" w-full flex md:flex-row flex-col-reverse items-center justify-center gap-16 py-24">
+        <section id="mentor" className="bg-zinc-900 w-full flex md:flex-row flex-col-reverse items-center justify-center gap-16 py-24">
           <div className="max-w-[35rem] w flex flex-col justify-center gap-12 p-4">
             <h2 className="font-bold text-3xl">QUEM SERÁ O SEU MENTOR?</h2>
             <div className="flex flex-col gap-8 text-xl">
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="relative md:w-[24rem] md:h-[26rem] w-[21rem] h-[24rem]">
             <Image src='/mentor.png' alt="Professor Pedro Barroso" className="object-cover object-right w-full h-full absolute opacity-100" width={550} height={7000}/>
-            <div className="bg-gradient-to-b from-transparent via-transparent to-black w-full md:h-[26rem] h-[24rem] absolute z-10  " />
+            <div className="bg-gradient-to-b from-transparent via-transparent to-zinc-900 w-full md:h-[26rem] h-[24rem] absolute z-10  " />
           </div>
           
         </section>

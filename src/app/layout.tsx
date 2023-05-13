@@ -15,7 +15,7 @@ export default function RootLayout({
 
   const [showPopup, setShowPopup] = useState(false);
 
-  const { registerHandler } = useExitIntent({
+  const { registerHandler, unsubscribe } = useExitIntent({
     "cookie": {
       "daysToExpire": 30,
       "key": "use-exit-intent"
@@ -34,6 +34,7 @@ export default function RootLayout({
 
   const handleClosePopup = () => {
     setShowPopup(false);
+    unsubscribe();
   }
 
   registerHandler({

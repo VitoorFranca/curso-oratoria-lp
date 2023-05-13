@@ -59,6 +59,11 @@ export default function RootLayout({
 
   return (
     <html lang="pt-br">
+      <>
+      <head>
+        <meta name="google-site-verification" content="L_0MaE1XbElW8PFp9P9REqHTOhhD5FUsQcdwxuglb4A" />
+      </head>
+      </>
 
 
       <body suppressHydrationWarning={true}  className={`bg-black text-zinc-50 ${showPopup && 'overflow-hidden'}`}>

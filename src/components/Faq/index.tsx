@@ -25,7 +25,7 @@ const Faq = () => {
             />
             <FaqItem
                 question="COMO VAI SER OS ENCONTROS ONLINE?"
-                response="Vamos ter Três encontros online nos dias 20 e 27 de Maio, e 3 de junho. Serão 3 sábados consecutivos de Curso."
+                response="Vamos ter Quatro encontros online nos dias 03, 10, 17 e 24 de junho. Serão 4 sábados consecutivos de Curso."
                 questionId="q-5"
                 responseId="resp-5"
             />

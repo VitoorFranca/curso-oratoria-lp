@@ -10,36 +10,40 @@ import TeraAcesso from "@/utils/tera-acesso"
 export const metadata = {
   title: 'Mentoria Oratória Eficaz - Pedro Barroso',
   description: 'Mentoria Oratória Eficaz é para pessoas que tem dificuldade para falar em publico',
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
+
 
 export default function Home() {
 
   return (
       <main className="flex flex-col justify-center items-center gap-12 scroll-smooth">
         
-        <section id="1" className="h-[50rem]">
+        <section id="1" >
   
-          <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">
+          <div className="flex flex-col items-center justify-center gap-4 p-8 pt-12">
             <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com a <strong>Mentoria Oratória Eficaz</strong></h1>
             <h2 className="text-lg">Supere o medo e a timidez na comunicação e torne-se um comunicador mais forte e envolvente. Descubra como!</h2>
           </div>
 
-          <div className="w-full h-5/6 flex-col flex pt-12 items-center gap-12">
-            <div className="bg-slate-600 md:h-4/6 md:w-8/12 w-4/5 h-72"/>
+          <div className="w-full flex-col flex pt-12 items-center gap-12">
+            <div className="bg-slate-600  w-5/6" style={{ position: "relative", paddingTop: "56.25%" }}>
+              <iframe style={{ border: "none", position: "absolute", top: 0, left: 0 }}  src="https://drive.google.com/file/d/1UIvW5ppn0lrHZeg20COS_5zNu3P7BpNq/preview" width="100%" height="100%"></iframe>
+            </div>
+
             <Button>Quero falar em público com segurança</Button>
 
           </div>
 
         </section>
 
-        <section className="bg-zinc-900 w-full flex flex-col items-center py-24 bg-image-2">
+        <section className="bg-zinc-900 w-full flex flex-col items-center py-14 bg-image-2">
           <div className="flex flex-col gap-6 text-xl px-8 line-clamp-6 max-w-[53rem]">
 
-            <span>
-              Você já perdeu oportunidades importantes na vida por não conseguir se expressar com segurança? Sabemos que a comunicação é uma habilidade crucial em todas as áreas da vida, e a falta dela pode ter um impacto significativo em nossa trajetória. Seja para apresentar um projeto no trabalho, falar em uma reunião de negócios ou até mesmo em uma entrevista de emprego, é importante saber se comunicar com clareza e confiança.
-            </span>
-            <span>
-              Foi pensando nisso que criamos uma metodologia de <strong>oratória eficiente</strong> e prática, que já transformou a vida de milhares de pessoas em todo o Brasil. Com técnicas comprovadas e adaptadas para a realidade de cada participante, nossos treinamentos de oratória oferecem um caminho seguro e efetivo para aprimorar a habilidade de <strong>falar em público</strong>, <strong>controlar a ansiedade</strong> e transmitir suas ideias com impacto. Não deixe que a falta de habilidade em se comunicar te impeça de alcançar seus objetivos. Invista em sua <strong>habilidade de comunicação</strong> e transforme sua vida com a nossa metodologia de oratória.
+            <span className="text-center">
+             Transforme sua vida com a oratória. Invista em si mesmo e alcance seu potencial máximo. Não deixe escapar oportunidades importantes. Torne-se um comunicador confiante. Supere limitações e conquiste o sucesso desejado. Não deixe que a falta de habilidade te impeça de crescer. Abrace a oratória e conquiste seu lugar.
             </span>
 
           </div>
@@ -101,24 +105,34 @@ export default function Home() {
             COMO FUNCIONA A <strong>MENTORIA</strong>?
           </h1>
 
-          <ul className="flex flex-col justify-center gap-8 max-w-[34rem]">
-            {
-              ComoFunciona?.map((text, i) => {
-                return (
-                  <li key={i} className="flex justify-center items-center gap-6">
-                    <div>
-                      <ChevronsRight className="text-green-400 w-[70px] h-[70px]" />
-                    </div>
-                    <p className="text-xl font-bold flex flex-col">
-                      {text}
-                      <span className="w-3/6 h-1 bg-green-400 mt-1"></span>
-                    </p>
-                  </li>
-                );
-              })
-            }
+          <div className="w-full flex md:flex-row flex-col-reverse items-center justify-center gap-6">
 
-          </ul>
+            <ul className="flex flex-col justify-center gap-8 max-w-[34rem]">
+              {
+                ComoFunciona?.map((text, i) => {
+                  return (
+                    <li key={i} className="flex justify-center items-center gap-6">
+                      <div>
+                        <ChevronsRight className="text-green-400 w-[70px] h-[70px]" />
+                      </div>
+                      <p className="text-xl font-bold flex flex-col">
+                        {text}
+                        <span className="w-3/6 h-1 bg-green-400 mt-1"></span>
+                      </p>
+                    </li>
+                  );
+                })
+              }
+
+            </ul>
+
+            <div className="relative md:w-[24rem] md:h-[34rem] w-[21rem] h-[30rem]">
+              <Image src='/pedrob.png' alt="Professor Pedro Barroso" className="object-cover object-right w-full h-full absolute opacity-100" width={550} height={300}/>
+              <div className="bg-gradient-to-b from-transparent via-transparent to-zinc-900 w-full md:h-[34rem] h-[30rem] absolute z-10  " />
+            </div>
+
+          </div>
+
           
           {/* <div className="flex justify-center">
             <Button>Quero falar em público com segurança</Button>
@@ -130,34 +144,34 @@ export default function Home() {
             O QUE VOCÊ TERA ACESSO
           </h1>
 
-          <ul className="flex flex-col justify-center gap-8 max-w-[24rem]">
-            {
-              TeraAcesso?.map((text, i) => {
+            <ul className="flex flex-col justify-center gap-8 max-w-[24rem]">
+              {
+                TeraAcesso?.map((text, i) => {
 
-                if(i === TeraAcesso.length - 1) return;
+                  if(i === TeraAcesso.length - 1) return;
 
-                return (
-                  <li key={i} className="flex items-center gap-6 border-2 px-4 py-4 border-green-400 border-solid rounded-full">
-                    <div>
-                      <CheckCircle className="text-green-400 w-[50px] h-[50px]" />
-                    </div>
-                    <p className="text-xl font-bold flex flex-col">
-                      {text}
-                    </p>
-                  </li>
-                );
-              })
-            }
+                  return (
+                    <li key={i} className="flex items-center gap-6 border-2 px-4 py-4 border-green-400 border-solid rounded-full">
+                      <div>
+                        <CheckCircle className="text-green-400 w-[50px] h-[50px]" />
+                      </div>
+                      <p className="text-xl font-bold flex flex-col">
+                        {text}
+                      </p>
+                    </li>
+                  );
+                })
+              }
 
-                  <li className="flex items-center gap-6 border-2 px-4 py-4 border-green-400 border-solid rounded-3xl">
-                    <div>
-                      <CheckCircle className="text-green-400 w-[50px] h-[50px]" />
-                    </div>
-                    <p className="text-xl font-bold flex flex-col">
-                      {TeraAcesso[TeraAcesso.length - 1]}
-                    </p>
-                  </li>
-          </ul>
+                    <li className="flex items-center gap-6 border-2 px-4 py-4 border-green-400 border-solid rounded-3xl">
+                      <div>
+                        <CheckCircle className="text-green-400 w-[50px] h-[50px]" />
+                      </div>
+                      <p className="text-xl font-bold flex flex-col">
+                        {TeraAcesso[TeraAcesso.length - 1]}
+                      </p>
+                    </li>
+            </ul>
           
           <div className="flex justify-center">
             <Button>Quero falar em público com segurança</Button>

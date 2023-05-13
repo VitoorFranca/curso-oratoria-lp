@@ -20,7 +20,7 @@ export default function Home() {
         <section id="1" className="h-[50rem]">
   
           <div className="flex flex-col items-center justify-center gap-4 p-8 pt-16">
-            <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com o curso <strong>Oratória Eficaz</strong></h1>
+            <h1 className="text-3xl font-medium">Ganhe confiança em apresentações importantes com a <strong>Mentoria Oratória Eficaz</strong></h1>
             <h2 className="text-lg">Supere o medo e a timidez na comunicação e torne-se um comunicador mais forte e envolvente. Descubra como!</h2>
           </div>
 

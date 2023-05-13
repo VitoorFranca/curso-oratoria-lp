@@ -30,7 +30,7 @@ const Faq = () => {
                 responseId="resp-5"
             />
             <FaqItem
-                question="Como funciona a garantia?"
+                question="COMO FUNCIONA A GARANTIA?"
                 response="As 10 aula gravadas ficaram disponíveis assim que a compra do curso ser efetuada, os demais bônus liberamos após 7 dias da compra. Você terá 7 dias desde o momento da compra para solicitar reembolso caso não goste do conteúdo."
                 questionId="q-garantia"
                 responseId="resp-garantia"

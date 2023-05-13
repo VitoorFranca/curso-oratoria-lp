@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="w-full flex-col flex pt-12 items-center gap-12">
             <div className="bg-slate-600  w-5/6" style={{ position: "relative", paddingTop: "56.25%" }}>
-              <iframe title="Professor Pedro Barroso Video" style={{ border: "none", position: "absolute", top: 0, left: 0 }}  src="https://drive.google.com/file/d/1UIvW5ppn0lrHZeg20COS_5zNu3P7BpNq/preview" width="100%" height="100%"></iframe>
+            <iframe style={{ border: "none", position: "absolute", top: 0, left: 0 }} width="100%" height="100%" src="https://www.youtube.com/embed/WEnlIA3odhg?controls=0" title="Professor Pedro Barroso Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
 
             <Button>Quero falar em público com segurança</Button>

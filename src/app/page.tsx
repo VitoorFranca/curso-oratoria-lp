@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="w-full flex-col flex pt-12 items-center gap-12">
             <div className="bg-slate-600  w-5/6" style={{ position: "relative", paddingTop: "56.25%" }}>
-            <iframe style={{ border: "none", position: "absolute", top: 0, left: 0 }} width="100%" height="100%" src="https://www.youtube.com/embed/WEnlIA3odhg?controls=0" title="Professor Pedro Barroso Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe style={{ border: "none", position: "absolute", top: 0, left: 0 }} width="100%" height="100%" src="https://www.youtube.com/embed/w8QauMtDbPw?controls=0" title="Professor Pedro Barroso Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
 
             <Button>Quero falar em público com segurança</Button>
@@ -194,10 +194,10 @@ export default function Home() {
           </ul>
         </section>
 
-        <section id="3" className=" flex flex-col justify-center items-center max-w-screen-xl gap-16 px-12">
-          <h1 className="text-4xl font-bold text-center">VALOR DO INVESTIMENTO</h1>
-          <div className="bg-zinc-900 flex items-center flex-col gap-14 p-10 rounded-md">
-            <div className="bg-zinc-800 w-96 rounded-md flex flex-col items-center justify-center gap-5 p-8 ">
+        <section id="55" className=" flex flex-col justify-center items-center max-w-screen-xl gap-16">
+          <h1 className="text-3xl font-bold text-center">VALOR DO INVESTIMENTO</h1>
+          <div className="bg-zinc-900 flex items-center flex-col gap-14 rounded-md p-8">
+            <div className="bg-zinc-800  rounded-md flex flex-col p-14 items-center justify-center gap-5  ">
               <span className="text-2xl">EM ATÉ 12X</span>
               <span className="text-3xl">R$<strong className="text-5xl text-green-400">14,76</strong></span>
               <span className="text-2xl">ou R$ <strong>147,00</strong> À VISTA</span>

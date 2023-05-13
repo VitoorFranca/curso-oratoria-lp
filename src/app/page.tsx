@@ -6,7 +6,6 @@ import { CheckCircle, ChevronsRight, CheckCheck } from 'lucide-react';
 import ParaQuem from "@/utils/para-quem"
 import ComoFunciona from "@/utils/como-funciona"
 import TeraAcesso from "@/utils/tera-acesso"
-import Head from "next/head";
 
 export const metadata = {
   title: 'Mentoria Oratória Eficaz - Pedro Barroso',
@@ -17,10 +16,6 @@ export default function Home() {
 
   return (
       <main className="flex flex-col justify-center items-center gap-12 scroll-smooth">
-        <Head>
-          <title>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</title>
-          {/* <Pixel name="FACEBOOK_PIXEL_1" /> */}
-        </Head>
         
         <section id="1" className="h-[50rem]">
   

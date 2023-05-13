@@ -194,7 +194,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section id="3" className=" flex flex-col justify-center items-center max-w-screen-xl gap-16">
+        <section id="3" className=" flex flex-col justify-center items-center max-w-screen-xl gap-16 px-12">
           <h1 className="text-4xl font-bold text-center">VALOR DO INVESTIMENTO</h1>
           <div className="bg-zinc-900 flex items-center flex-col gap-14 p-10 rounded-md">
             <div className="bg-zinc-800 w-96 rounded-md flex flex-col items-center justify-center gap-5 p-8 ">
